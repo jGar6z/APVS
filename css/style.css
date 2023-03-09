@@ -151,13 +151,14 @@ header .header-contact p {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: #7ca04f;
     padding: 15px 25px;
     border-radius: 15px;
     cursor: pointer;
     width: max-content;
     transition: 300ms;
+    color: #fff;
 }
 
 .main .slide-text .main-btn:hover {
