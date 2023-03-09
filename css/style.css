@@ -61,6 +61,11 @@ header .header-contact {
     border-radius: 10px;
     padding: 5px 10px;
     margin-left: 50px;
+    transition: 300ms;
+}
+
+header .header-contact:hover {
+    background-color: #567333;
 }
 
 header .header-contact img {
@@ -121,7 +126,53 @@ header .header-contact p {
     display: flex;
 }
 
-/*Main Slider*/
+.main .slide-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 280px;
+    position: absolute;
+    width: 400px;
+    margin-left: 150px;
+    color: #fff;
+}
+
+.main .slide-text .title {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.main .slide-text .txt {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main .slide-text .main-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #7ca04f;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: max-content;
+    transition: 300ms;
+}
+
+.main .slide-text .main-btn:hover {
+    background-color: #567333;
+}
+
+.main .slide-text .main-btn img {
+    width: 25px;
+    filter: invert(100%);
+}
+
+.main .slide-text .main-btn p {
+    font-weight: 500;
+}
+
 .main .main-slider {
     width: 100vw;
     overflow: hidden;
@@ -163,6 +214,8 @@ header .header-contact p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: auto;
     padding: 36px 0;
 }
 
@@ -176,6 +229,7 @@ header .header-contact p {
     display: flex;
     gap: 50px;
     align-items: center;
+    justify-content: center;
 }
 
 .benefits .benefits-section-nav button {
@@ -197,6 +251,17 @@ header .header-contact p {
 .benefits .benefits-section-nav .active {
     background-color: #0139ab;
     color: #fff;
+}
+
+.benefits img {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    display: none;
+}
+
+.benefits .active {
+    display: flex;
 }
 
 /*Doubts*/
