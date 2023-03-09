@@ -22,10 +22,10 @@
                 </button>
                 <ul id="menu" role="menu">
                     <li><a id="item" href="">Início</a></li>
-                    <li><a id="item" href="">Proteções e Benefícios</a></li>
-                    <li><a id="item" href="">Dúvidas</a></li>
-                    <li><a id="item" href="">Trabalhe Conosco</a></li>
-                    <li><a id="item" href="">Localização</a></li>
+                    <li><a id="item" href="#benefits">Proteções e Benefícios</a></li>
+                    <li><a id="item" href="#doubts">Dúvidas</a></li>
+                    <li><a id="item" href="#contact">Trabalhe Conosco</a></li>
+                    <li><a id="item" href="#address">Localização</a></li>
                     <a href="" class="btn">
                         <div class="header-contact">
                             <img src="assets/logo-whatsapp.svg" alt="logo-whatsapp.svg">
@@ -38,7 +38,7 @@
 
         <main>
             <!--WhatsApp Floating Button-->
-            <a href="https://wa.me/?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5521964815752?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">
                 <section class="wpp-btn">
                     <img src="assets/logo-whatsapp.svg" alt="logo-whatsapp.svg">
                     <p>Entre em contato</p>
@@ -56,7 +56,7 @@
                             <div class="slide-text">
                                 <h1 class="title">Proteja seu veículo!</h1>
                                 <p class="txt">O melhor custo x benefício do mercado para você protejer seu veículo e garantir os melhores custos benefícios do mercado.</p>
-                                <a href="https://wa.me/?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">    
+                                <a href="https://wa.me/5521964815752?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">    
                                     <div class="main-btn">
                                         <img src="assets/logo-whatsapp.svg" alt="logo-whatsapp.svg">
                                         <p>Contato via WhatsApp</p>
@@ -69,7 +69,7 @@
                             <div class="slide-text">
                                 <h1 class="title">Proteção da pesada!</h1>
                                 <p class="txt">Quando o assunto é proteção para utilitários e caminhões, somos especialistas. Montamos uma equipe da PESADA. Agora a APVS TRUCK oferece a melhor proteção e segurança para auxiliar o transportador.</p>
-                                <a href="https://wa.me/?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">    
+                                <a href="https://wa.me/5521964815752?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">    
                                     <div class="main-btn">
                                         <img src="assets/logo-whatsapp.svg" alt="logo-whatsapp.svg">
                                         <p>Contato via WhatsApp</p>
@@ -80,9 +80,9 @@
                         </div>
                         <div class="slide">
                             <div class="slide-text">
-                                <h1 class="title">Proteja sua moto sem burocraciat!</h1>
+                                <h1 class="title">Proteja sua moto sem burocracia!</h1>
                                 <p class="txt">Você proteje sua moto, garante os melhores benefícios do mercado e tudo isso sem consulta SPC/SERASA e sem análise de perfil do motorista e CEP.</p>
-                                <a href="https://wa.me/?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">    
+                                <a href="https://wa.me/5521964815752?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">    
                                     <div class="main-btn">
                                         <img src="assets/logo-whatsapp.svg" alt="logo-whatsapp.svg">
                                         <p>Contato via WhatsApp</p>
@@ -149,7 +149,7 @@
             </section>
 
             <!--Benefits-->
-            <section class="benefits">
+            <section class="benefits" id="benefits">
                 <h1 class="title">Proteções e Benefícios</h1>
                 <div class="benefits-section">
                     <div class="benefits-section-nav">
@@ -167,7 +167,7 @@
             </section>
             
             <!--Doubts-->
-            <section class="doubts">
+            <section class="doubts" id="doubts">
                 <img class="doubts-title" src="assets/doubts-title.png" alt="doubts-title.png">
                 <p class="txt">Clique em algumas das perguntas abaixo, que responderemos abaixo algumas dúvidas sobre a maior associação da América Latina.</p>
                 <div class="faq">
@@ -213,7 +213,7 @@
             </section>
 
             <!--Contact-->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h1 class="title">Venha trabalhar conosco!</h1>
                 <div class="dec"></div>
                 <form action="./php/consultores-email.php" method="POST">
@@ -223,14 +223,15 @@
                         <input class="input input-cel" name="cel" type="tel" placeholder="Celular (com DDD)" required>
                     </div>
                     <textarea class="input" name="message" placeholder="Mensagem" required></textarea>
-                        <div class="contact-form-div">
+                    <div class="contact-form-div">
+                        <label><input></label>
                         <button type="submit">Enviar →</button>
                     </div>
                 </form>
             </section>
 
             <!--Address-->
-            <section class="address">
+            <section class="address" id="address">
                 <div class="address-info">
                     <h2 class="subtitle">Faça-nos uma visita</h2>
                     <p>Av. Ayrton Senna 2600 - Office 2, Sala 448 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-003</p>
