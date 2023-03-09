@@ -101,6 +101,51 @@
                         <label for="radio3" class="manual-btn"></label>
                     </div>
                 </div>
+
+                <div class="main-form">
+                    <h1 class="title">Calcule o valor para seu veículo</h1>
+                    <form action="./php/clientes-email.php" method="POST">
+                        <input class="field" type="text" name="nome" placeholder="Nome*" required>
+                        <input class="field" type="email" name="email" placeholder="Email*" required>
+                        <input class="field" type="tel" name="tel" placeholder="Telefone para contato (com DDD)*" required>
+                        <input class="field" type="text" name="veiculo" placeholder="Veículo - Marca / Modelo / Ano *" required>
+                        <div class="main-form-div">
+                            <input class="field" type="text" name="cidade" placeholder="Cidade*" required>
+                            <select class="field">
+                                <option selected value="UF">UF</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AM">AM</option>
+                                <option value="AP">AP</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MG">MG</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PG">PG</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="PR">PR</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="RS">RS</option>
+                                <option value="SC">SC</option>
+                                <option value="SE">SE</option>
+                                <option value="SP">SP</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </section>
 
             <!--Benefits-->
@@ -167,13 +212,20 @@
                 </div>
             </section>
 
-            <!---->
-            <section class=""></section>
-
             <!--Contact-->
-            <section class="">
-                <form action="./php/enviar-email.php" method="POST">
-                    <input class="field" type="name" name="name" required>
+            <section class="contact">
+                <h1 class="title">Venha trabalhar conosco!</h1>
+                <div class="dec"></div>
+                <form action="./php/consultores-email.php" method="POST">
+                    <input class="input" type="name" name="name" placeholder="Nome completo" required>
+                    <div class="contact-form-div">
+                        <input class="input" name="mail" type="email" placeholder="E-mail" required>
+                        <input class="input input-cel" name="cel" type="tel" placeholder="Celular (com DDD)" required>
+                    </div>
+                    <textarea class="input" name="message" placeholder="Mensagem" required></textarea>
+                        <div class="contact-form-div">
+                        <button type="submit">Enviar →</button>
+                    </div>
                 </form>
             </section>
 
