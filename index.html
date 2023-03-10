@@ -104,14 +104,19 @@
 
                 <div class="main-form">
                     <h1 class="title">Calcule o valor para seu veículo</h1>
-                    <form action="./php/clientes-email.php" method="POST">
-                        <input class="field" type="text" name="nome" placeholder="Nome*" required>
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                        <input type="hidden" name="replyTo" value="@">
+                        <input type="hidden" name="accessKey" value="">
+                        <input type="hidden" name="subject" value="Contato  pelo Site" />
+                        <input type="hidden" name="redirectTo" value="">
+
+                        <input class="field" type="text" name="$name" placeholder="Nome*" required>
                         <input class="field" type="email" name="email" placeholder="Email*" required>
-                        <input class="field" type="tel" name="tel" placeholder="Telefone para contato (com DDD)*" required>
-                        <input class="field" type="text" name="veiculo" placeholder="Veículo - Marca / Modelo / Ano *" required>
+                        <input class="field" type="tel" name="$telefone" placeholder="Telefone para contato (com DDD)*" required>
+                        <input class="field" type="text" name="$veiculo" placeholder="Veículo - Marca / Modelo / Ano *" required>
                         <div class="main-form-div">
-                            <input class="field" type="text" name="cidade" placeholder="Cidade*" required>
-                            <select class="field">
+                            <input class="field" type="text" name="$cidade" placeholder="Cidade*" required>
+                            <select class="field" name="$estado">
                                 <option selected value="UF">UF</option>
                                 <option value="AC">AC</option>
                                 <option value="AL">AL</option>
@@ -224,7 +229,8 @@
                     </div>
                     <textarea class="input" name="message" placeholder="Mensagem" required></textarea>
                     <div class="contact-form-div">
-                        <label><input></label>
+                        <label>Anexar currículo:</label>
+                        <input type="file">
                         <button type="submit">Enviar →</button>
                     </div>
                 </form>
