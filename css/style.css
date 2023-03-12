@@ -142,7 +142,7 @@ header .header-contact p {
 
 .main .slide-text .txt {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .main .slide-text .main-btn {
@@ -170,6 +170,7 @@ header .header-contact p {
 
 .main .slide-text .main-btn p {
     font-weight: 500;
+    font-size: 18px;
 }
 
 .main .main-slider {
@@ -262,6 +263,62 @@ header .header-contact p {
     font-weight: 500;
     font-size: 16px;
     cursor: pointer;
+}
+
+/*About*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 28px;
+}
+
+.about .about-title {
+    width: 350px;
+}
+
+.about .about-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about .about-section .about-section-div {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .about-section-div h1 {
+    font-weight: 600;
+    font-size: 38px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #3578ff;
+    border: 10px solid #8bb2ff;
+}
+
+.about .about-section-div h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about .about-section-div p {
+    font-size: 18px;
+}
+
+.about .about-section-div span.color {
+    color: #0e49cb;
+    font-weight: 600;
 }
 
 /*Benefits*/
@@ -357,6 +414,7 @@ header .header-contact p {
     font-weight: 500;
     border-radius: 10px;
     cursor: pointer;
+    gap: 7px;
 }
 
 .doubts .faq details summary::after {
@@ -657,8 +715,12 @@ footer .footer-icon {
         top: -7px;
     }
 
+    header .header-contact {
+        display: none;
+    }
+
     /*Main*/
-    .main img {
+    .main .img {
         position: relative;
         top: -70px;
     }
@@ -731,6 +793,11 @@ footer .footer-icon {
         font-size: 20px;
     }
 
+    /*About*/
+    .about .about-section {
+        margin-top: 20px;
+    }
+
     /*Benefits*/
     .benefits {
         padding: 28px;
@@ -756,19 +823,19 @@ footer .footer-icon {
     } 
 
     .benefits .benefits-section #img-1 {
-        content: url(../assets/benifits-car-mobile.jpg);
+        content: url(../assets/benefits-car-mobile.jpg);
     }
 
     .benefits .benefits-section #img-2 {
-        content: url(../assets/benifits-bike-mobile.jpg);
+        content: url(../assets/benefits-bike-mobile.jpg);
     }
 
     .benefits .benefits-section #img-3 {
-        content: url(../assets/benifits-utility-mobile.jpg);
+        content: url(../assets/benefits-utility-mobile.jpg);
     }
 
     .benefits .benefits-section #img-4 {
-        content: url(../assets/benifits-truck-mobile.jpg);
+        content: url(../assets/benefits-truck-mobile.jpg);
     }
 
     /*Doubts*/
@@ -936,8 +1003,7 @@ footer .footer-icon {
     }
 
     .main .slide-text .main-btn {
-        padding: 10px 15px;
-        font-size: 14px;
+        display: none;
     }
 
     .main .main-form {
@@ -955,6 +1021,16 @@ footer .footer-icon {
 
     .main form button {
         height: 50px;
+    }
+
+    /*About*/
+    .about .about-section {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .about .about-section .about-section-div {
+        width: 100%;
     }
 
     /*Benefits*/
@@ -982,19 +1058,19 @@ footer .footer-icon {
     } 
 
     .benefits .benefits-section #img-1 {
-        content: url(../assets/benifits-car-mobile.jpg);
+        content: url(../assets/benefits-car-mobile.jpg);
     }
 
     .benefits .benefits-section #img-2 {
-        content: url(../assets/benifits-bike-mobile.jpg);
+        content: url(../assets/benefits-bike-mobile.jpg);
     }
 
     .benefits .benefits-section #img-3 {
-        content: url(../assets/benifits-utility-mobile.jpg);
+        content: url(../assets/benefits-utility-mobile.jpg);
     }
 
     .benefits .benefits-section #img-4 {
-        content: url(../assets/benifits-truck-mobile.jpg);
+        content: url(../assets/benefits-truck-mobile.jpg);
     }
 
     /*Doubts*/

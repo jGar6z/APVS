@@ -22,7 +22,7 @@ let count = 1;
 
 setInterval(function(){
     nextImage();
-}, 10000)
+}, 5000)
 
 function nextImage(){
     count++;
